@@ -1,0 +1,90 @@
+@font-face {
+    font-family: Star1;
+    src: url('Starjedi.ttf');
+    
+}
+
+@font-face {
+    font-family: Star2;
+    src: url('Stjldbl1.ttf')
+}
+
+:root {
+    /* VARIÁVEIS */
+    --cor_fundo: #9E0000;
+    --cor_parágrafo: #DDDEDA;
+    --cor_título: #020004;
+    --cor_link: #4E0000;
+    --fonte_principal: Star1;
+    --fonte_secundária: Star2;
+    --cor_fonte_s : #ffff00;
+    --fonte_tamanho: 20px; 
+}
+
+* {
+    margin: 0;
+}
+
+body { 
+    font-family: var(--fonte_principal);
+    background-color: var(--cor_fundo);
+    /* margin-left: auto;
+    margin-right : auto;
+    margin-top: 0;
+    margin bottom : 0;*/
+    font-size: var(--fonte_tamanho);
+}
+
+.container {
+    width: 2000px;
+    max-width: 100%;
+    text-align: center;
+    /*0 -> CIMA|BAIXO*/
+    /*AUTO -> ESQUERA|DIREITA*/
+    margin: 0 auto;
+    
+}
+
+div.imagem {text-align: center;}
+
+h1 { 
+    color: var(--cor_título);
+    font-family: var(--fonte_principal);
+    font-size: 2cm;
+
+}
+
+body p {color: var(--cor_fonte_s);
+        text-align: justify;
+        font-family: var(--fonte_secundária);
+        padding: 30px;
+        }
+
+
+ul {padding: 0;
+    list-style: none;
+    font-size: 20px;
+    font-weight: bold;}
+
+ul li {margin-bottom: 5px;}
+
+ul li a {color: var(--cor_link);
+        text-decoration: none;}
+
+img { 
+    width: 300px;
+    padding: 10px;
+}
+img:hover {
+    background-color: #ffff00;
+    width: 375px;
+}
+
+.imagem {
+border-top: 20px solid #020004;
+border-bottom: 20px solid #020004;
+}
+
+.center{
+    text-align: center;
+}
